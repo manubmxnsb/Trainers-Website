@@ -1,0 +1,58 @@
+<div class="page-body" *ngIf="$trainers | async as trainers">
+  <div class="trainersHeader">
+    <h2 class="title">All Trainers</h2>
+  </div>
+  <div class="trainerTable">
+    <mat-table [dataSource]="$trainers" matSort class="trainer-mat-table">
+      <ng-container matColumnDef="Trainer Name">
+        <th class="table-header" mat-header-cell mat-sort-header *matHeaderCellDef>
+          <span class="table-header-items">Trainer Name</span>
+        </th>
+        <td class="table-content" mat-cell *matCellDef="let trainer">
+          <span class="table-content-items">{{ trainer.name }} </span>
+        </td>
+      </ng-container>
+      <ng-container matColumnDef="Sex">
+        <th class="table-header" mat-header-cell *matHeaderCellDef>
+          <span class="table-header-items">Sex</span>
+          </th>
+        <td class="table-content" mat-cell *matCellDef="let trainer">
+          <span class="table-content-items">{{ trainer.sex }}</span>
+        </td>
+      </ng-container>
+      <ng-container matColumnDef="Age">
+        <th class="table-header" mat-header-cell *matHeaderCellDef>
+          <span class="table-header-items">Age</span>
+        </th>
+        <td class="table-content" mat-cell *matCellDef="let trainer">
+          <span class="table-content-items">{{ trainer.age }}</span>
+        </td>
+      </ng-container>
+      <ng-container matColumnDef="Years of Experience">
+        <th class="table-header" mat-header-cell *matHeaderCellDef>
+          <span class="table-header-items">Years of Experience</span>
+        </th>
+        <td class="table-content" mat-cell *matCellDef="let trainer">
+            <span class="table-content-items">{{ trainer.yearsOfExperience }}</span>
+        </td>
+    </ng-container>
+    <ng-container matColumnDef="isAvailable">
+        <th class="table-header" mat-header-cell *matHeaderCellDef>
+          <span class="table-header-items">Availability</span>
+        </th>
+        <td class="table-content" mat-cell *matCellDef="let trainer">
+            <span class="table-content-items">{{ trainer.isAvailable }}</span>
+        </td>
+  </ng-container>
+        <ng-container matColumnDef="City">
+            <th class="table-header" mat-header-cell *matHeaderCellDef>
+              <span class="table-header-items">City</span>
+            </th>
+            <td class="table-content" mat-cell *matCellDef="let trainer">
+                <span class="table-content-items">{{ trainer.city }}</span>
+            </td>
+      </ng-container>
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+    </mat-table>
+</div>
