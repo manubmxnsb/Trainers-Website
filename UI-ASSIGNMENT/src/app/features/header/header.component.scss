@@ -3,7 +3,7 @@
   z-index: 1;
   display: flex;
   width: 100%;
-  height: 3vw;
+  height: 3.5vw;
   align-items: center;
   justify-content: left;
   box-shadow: 0 6px 6px 0px #e9eaea;
@@ -15,12 +15,12 @@
     display: inline-flex;
     width: 400px;
     font-family: Yaldevi, sans-serif;
-    color: var(--grey-secondary, #96a0b6);
+    color: var(--grey-secondary, #758fc7);
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    margin-bottom: 0.8vw;
+    margin-bottom: 0.3vw;
     margin-left: 1.2vw;
   }
 }

@@ -1,3 +1,62 @@
-body {
-  margin-top: 200px;
+.page-body {
+  margin-top: 8vw;
+  margin-left: 7vw;
+}
+.page-body .trainerHeader {
+  position: relative;
+  width: 1212px;
+  height: 56px;
+  gap: 754px;
+  margin-bottom: 2vw;
+}
+.page-body .trainerHeader .title {
+  font-size: 30px;
+  line-height: 39.48px;
+  color: #96a0b6;
+  font-family: Yaldevi, sans-serif;
+  font-weight: 700 !important;
+  margin-left: 1vw;
+}
+.page-body .trainerTable {
+  display: flex;
+  flex-direction: column;
+  gap: 8%;
+  width: 90%;
+  height: 501px;
+  flex-shrink: 0;
+  margin-top: 48px;
+  left: 181px;
+  box-shadow: 0 6px 6px 0px #e9eaea;
+}
+.page-body .trainerTable .trainer-mat-table {
+  display: table;
+}
+.page-body .trainerTable .table-header {
+  flex-direction: row;
+  margin-top: 1vw;
+  background: #e9eaea;
+  color: #96a0b6;
+  font-family: Yaldevi, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+}
+.page-body .trainerTable .table-header .table-header-items {
+  display: flex;
+  align-items: center;
+  margin-left: 3vw;
+  margin-top: 1vw;
+}
+.page-body .trainerTable .table-content {
+  background: white;
+  font-family: Yaldevi, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  max-height: 2vw;
+  justify-content: center;
+  align-items: center;
+}
+.page-body .trainerTable .table-content .table-content-items {
+  display: flex;
+  margin-top: 1vw;
+  margin-left: 3vw;
 }/*# sourceMappingURL=trainer.component.css.map */

@@ -8,10 +8,11 @@ import { StoreModule } from '@ngrx/store';
 import { EffectsModule } from '@ngrx/effects';
 import { trainerEffects } from './store/effects/trainers.effects';
 import { trainerReducer } from './store/reducers/trainers.reducer';
-import { HeaderComponent } from './header/header.component';
 import { TrainerModule } from './features/trainer/trainer.module';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { TrainerService } from './features/trainer/trainer.service';
+import { HeaderComponent } from './features/header/header.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { TrainerService } from './features/trainer/trainer.service';
     BrowserModule,
     TrainerModule,
     AppRoutingModule,
+    HttpClientModule,
     StoreModule.forRoot({
       trainer:trainerReducer
     }),
