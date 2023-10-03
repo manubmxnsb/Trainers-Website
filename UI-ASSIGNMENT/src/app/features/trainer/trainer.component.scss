@@ -1,0 +1,63 @@
+.page-body {
+    margin-top: 8vw;
+    margin-left: 7vw;
+  .trainerHeader {
+    position: relative;
+    width: 1212px;
+    height: 56px;
+    gap: 754px;
+    margin-bottom: 2vw;
+    .title {
+      font-size: 30px;
+      line-height: 39.48px;
+      color: #96a0b6;
+      font-family: Yaldevi, sans-serif;
+      font-weight: 700 !important;
+      margin-left: 1vw;
+    }
+  }
+  .trainerTable {
+    display: flex;
+    flex-direction: column;
+    gap: 8%;
+    width: 90%;
+    height: 501px;
+    flex-shrink: 0;
+    margin-top: 48px;
+    left: 181px;
+    box-shadow: 0 6px 6px 0px #e9eaea;
+  
+    .trainer-mat-table {
+      display: table;
+    }
+    .table-header {
+      flex-direction: row;
+      margin-top: 1vw;
+      background: #e9eaea ;
+      color: #96a0b6;
+      font-family: Yaldevi, sans-serif;
+      font-weight: 600 ;
+      font-size: 16px ;
+      .table-header-items {
+        display: flex;
+        align-items: center;
+        margin-left: 3vw;
+        margin-top: 1vw;
+      }
+    }
+    .table-content {
+      background: white;
+      font-family: Yaldevi, sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      max-height: 2vw;
+      justify-content: center;
+      align-items: center;
+      .table-content-items {
+        display: flex;
+        margin-top: 1vw;
+        margin-left: 3vw;
+      }
+    }
+  }
+}
